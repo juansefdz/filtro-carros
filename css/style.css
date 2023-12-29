@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad&family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad", sans-serif;
+  font-family: "Russo One", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  padding-top: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(20, 20, 20);
+  text-shadow: 0px 0px 50px #ffffff;
+}
+
+/* formulario */
+.form-filter {
+  margin-top: 5%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px;
+}
+
+.cont-select {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-select label {
+  color: #b8b8b8;
+  font-size: 15px;
+}
+.cont-select select {
+  font-size: 15px;
+  color: #1f1e1e;
+  background-color: #bbbbbb50 !important;
+  padding: 10px;
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.cont-select select option {
+  background-color: #bbbbbb50 !important;
+  font-size: 12px;
+}
+
+/*tarjetas*/
+
+.container-cards {
+  display: flex;
+  padding: 10px;
+  height: 60vh;
+  width: 90%;
+  overflow-y: auto;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.container-cards .card {
+  border-radius: 9px;
+  overflow: hidden;
+  background: #bbbbbb50;
+  backdrop-filter: blur(10px);
+  height: min-content;
+  width: 250px;
+}
+
+.container-cards .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.container-cards .card p {
+  color: #b8b8b8;
+  text-align: center;
+  padding: 2px;
+}
